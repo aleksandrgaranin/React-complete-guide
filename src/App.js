@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Radium from 'radium';
+import Radium, {StyleRoot} from 'radium';
 
 import './App.css';
 
@@ -90,6 +90,7 @@ class App extends Component {
     }
 
     return (
+      <StyleRoot>
       <div className="App">
         <h1>Hi,I'm React app</h1>
         <p className={classes.join(' ')}>This is working</p>
@@ -98,6 +99,7 @@ class App extends Component {
           onClick={this.togglePersonsHandler}>Toggle Persons</button> 
         {persons}         
       </div>
+      </StyleRoot>
     );
   }};
 export default Radium(App);
