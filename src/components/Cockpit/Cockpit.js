@@ -23,8 +23,7 @@ const cockpit = (props) => {
                 This is working
             </p>
             <button 
-            className={btnClass} 
-            showPersons={props.showPersons}
+            className={btnClass}
             onClick={props.clicked}>
                 Toggle Persons
             </button> 
