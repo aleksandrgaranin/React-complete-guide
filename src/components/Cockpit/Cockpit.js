@@ -9,6 +9,9 @@ const Cockpit = props => {
         setTimeout(()=>{
             alert('Saved data to cloud!');
         }, 1000);
+        return ()=>{
+            console.log('[Cocpit.js] clean up work in useEffect');
+        };
     }, []);  
 
     const assinedClasses = []; 
