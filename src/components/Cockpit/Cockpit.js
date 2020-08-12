@@ -3,7 +3,7 @@ import classes from './Cockpit.module.css'
 
 const Cockpit = props => {
 
-    useEffect(function persistForm() {
+    useEffect(()=> {
         console.log('[Cockpit.js] useEffect');
         //Http request...
         setTimeout(()=>{
@@ -13,6 +13,14 @@ const Cockpit = props => {
             console.log('[Cocpit.js] clean up work in useEffect');
         };
     }, []);  
+
+    useEffect(()=>{
+        console.log('[Cockpip.js] 2nd useEffect')
+        return ()=>{
+            console.log('[Cockpit.js] clean up work in 2nd useEffect');
+        }
+    
+    });
 
     const assinedClasses = []; 
     let btnClass = '';
