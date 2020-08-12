@@ -4,6 +4,7 @@ import Person from './Person/Person';
 
 
 
+
 class Persons extends PureComponent{
   // static getDerivedStateFromProps(props,state){
   //   console.log('[Persons.js] getDerivedStateProps');
@@ -52,7 +53,7 @@ class Persons extends PureComponent{
           age={person.age} 
           key={person.id}
           changed={event => this.props.changed(event, person.id)}
-          isAuth={this.props.isAuthenticated}
+         
         />
       );
     
