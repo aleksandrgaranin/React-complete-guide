@@ -3,6 +3,8 @@ import Aux from '../../../hoc/Aux';
 import styles from './Person.module.css';
 
 
+
+
 class Person extends Component {
     render (){
         console.log('[Person.js] rendering...') 
