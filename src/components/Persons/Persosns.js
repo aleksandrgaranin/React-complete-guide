@@ -9,10 +9,10 @@ class Persons extends Component{
   //   return state;
   // }
 
-  componentWillReceiveProps(props) {
-    console.log('[Persons.js] componemtWillReciveProps',props)
+  // componentWillReceiveProps(props) {
+  //   console.log('[Persons.js] componemtWillReciveProps',props);
 
-  }
+  // }
 
   shouldComponentUpdate(nextProps, nextState){
     console.log('[Persons.js] shouldComponentUpdate');    
